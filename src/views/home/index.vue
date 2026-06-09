@@ -1,8 +1,10 @@
 <script setup>
+
+
 </script>
 
 <template>
-  <RouterView/>
+  <h1>Home</h1>
 </template>
 
 <style scoped>

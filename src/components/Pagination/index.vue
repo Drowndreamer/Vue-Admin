@@ -1,8 +1,10 @@
 <script setup>
+
+
 </script>
 
 <template>
-  <RouterView/>
+<SvgIcon></SvgIcon>
 </template>
 
 <style scoped>

@@ -1,0 +1,15 @@
+@use 'reset';
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $base-menu-background;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: yellowgreen;
+  border-radius: 10px;
+}
