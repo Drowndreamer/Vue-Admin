@@ -1,18 +1,23 @@
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
+import { useUserStore } from '@/stores/module/user.ts'
 const request = axios.create({
   baseURL: import.meta.env.VITE_APP_BASE_API,
   timeout: 5050
 })
 //请求拦截器，在请求发送之前触发
 request.interceptors.request.use(config => {
+  const userStore = useUserStore()
+  const token = userStore.token
+  if (token) {
+    config.headers.token = token
 
-
+  }
   return config
 })
 
 //响应拦截器，在拿到响应之后触发
-request.interceptors.response.use(response =>{
+request.interceptors.response.use(response => {
 
   return response.data
 }, err => {

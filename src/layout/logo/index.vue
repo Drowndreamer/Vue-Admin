@@ -6,7 +6,7 @@ import setting from '@/setting'
 <template>
   <div class="logo">
     <img :src="setting.logo">
-    <p>{{ setting.title }}</p>
+    <p style="margin-left: 50px;">{{ setting.title }}</p>
   </div>
 </template>
 
@@ -17,7 +17,6 @@ import setting from '@/setting'
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 
   img {
     width: 40px;
